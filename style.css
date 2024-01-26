@@ -1,0 +1,288 @@
+:root {
+    --main-background-color: #080808;
+    --main-text-color: #cccccc;
+    --title-font-size: 2rem;
+    --subtitle-font-size: 1rem;
+    --text-letter-spacing: 0.3em;
+    --font-size-h2: 1.8rem;
+    --font-size-p: 1.1rem;
+}
+
+* {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-repeat:no-repeat
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+p {
+    font-size: var(--font-size-p);
+}
+
+ol, ul {
+    list-style-type:none
+}
+
+a {
+    text-decoration:none
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    letter-spacing: var(--text-letter-spacing);
+}
+
+.content-section {
+    width: 100vw;
+    height: 40vw;
+}
+
+.content {
+    width: var(--horizontal-restriction-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-spacer {
+    height: 20vh;
+}
+
+.section-spacer2 {
+    height: 10vh;
+}
+
+/* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header .spacer {
+    height: 15%;
+}
+
+#header img {
+    width: 70%;
+}
+
+#header #title {
+    height: 25%;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: var(--title-font-size);
+}
+
+#header #subtitle {
+    height: 20%;
+    text-align: center;
+    font-size: var(--subtitle-font-size);
+}
+
+/* main-photo */
+
+#main-photo {
+    background-image: url(assets/shugo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .content {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about h2 {
+    padding: 50px 0;
+}
+
+#about p {
+    text-align: center;
+}
+
+/* app */
+
+.app-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 80%;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.app-left .content {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.app-left .content .item {
+    height: 100%;
+    width: 50%;
+}
+
+.app-left .content .text-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-left .content .text-container h2 {
+    padding: 30px 0;
+}
+
+.app-left .content .text-container p {
+    width: 80%;
+}
+
+.app-left .content .image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-left .content .image-container img {
+    margin-top: 40%;
+    height: 120%;
+}
+
+/* app right */
+
+.app-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 100%;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.app-right .content {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: start;
+}
+
+.app-right .content .item {
+    height: 100%;
+    width: 50%;
+}
+
+.app-right .content .text-container {
+    height: 100%;
+    display: flex;
+    padding-left: 10%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-right .content .text-container h2 {
+    padding: 30px 0;
+}
+
+.app-right .content .text-container p {
+    width: 80%;
+}
+
+.app-right .content .image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-right .content .image-container img {
+    margin-top: 40%;
+    height: 120%;
+}
+
+/* background */
+
+.rasukaru-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/rasukaru.png);
+}
+
+.yuruyuru-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/yuruyuru.png);
+}
+
+.takuu-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/takuu.png);
+}
+
+.nanan-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/nanan.png);
+}
+
+.miyaken-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/miyaken.png);
+}
+
+.niko-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/niko.png);
+}
+
+.aoichi-back {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(assets/aoichi.png);
+}
+
+/* footer */
+
+#footer {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#footer img {
+    width: 50px;
+}
+
+#footer .item {
+    margin: 0 10px;
+}
